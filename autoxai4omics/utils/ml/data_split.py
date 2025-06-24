@@ -168,8 +168,8 @@ def strat_split(
             x_train, x_test, y_train, y_test = (
                 x.iloc[train_idx, :],
                 x.iloc[test_idx, :],
-                y.iloc[train_idx, :],
-                y.iloc[test_idx, :],
+                y.iloc[train_idx],
+                y.iloc[test_idx],
             )
         else:
             x_train, x_test, y_train, y_test = (
